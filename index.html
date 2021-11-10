@@ -6,7 +6,17 @@
         </strong>
         <br /> have a <em>fantastic</em> day and make sure 
             to eat + be hydrated. u can do it! ly <333 
-        <br /> - art
+        <br /> - art            
+    </body>
+    <body>
+        <P></P>
+            <button 
+            type = "button"
+            class = "opening"
+            id = "button1"
+            onclick = "update()">
+            click for a surprise
+            </button>
     </body>
     <br /> <!-- Break code -->
     <br />
@@ -19,12 +29,31 @@
     <img src="https://cdn.shopify.com/s/files/1/0344/6469/files/catzillas-9.jpg?v=1527625921"
         width = "300"
         height = "200" />
-    
+   
+    <script>
+        function update(){
+            document.getElementById("button1").innerHTML = "eat those yummy brownies !!";
+            document.getElementById("button1").classList.add("closing");
+        }
+    </script>
+
     <!-- makes your website unique-->
     <style> 
         .pink{
             color: #db7093;
         }
 
+        .opening{
+            text-align: center;
+            background-color: pink;
+            border: 2px solid black;
+        }
+        
+        .closing{
+            text-align: center;
+            background-color: white;
+            border: 2px solid #EA639E;
+            color: #EA639E;
+        }
     </style>
 </html>
